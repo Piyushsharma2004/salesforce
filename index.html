@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://a.sfdcstatic.com/shared/images/c360-nav/mobile_logo.png">
+
+    <script src="https://kit.fontawesome.com/d090e259b2.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link rel="stylesheet" href="style.css">
+    <title> Salesforce (Piyush)</title>
+</head>
+
+<body>
+    <div class="Salesforce-home-page" id="sectionone">
+        <!--mobile navbar-->
+        <div class="Salesforce-home-page-navbar-mobile fixed-top d-block d-sm-block d-md-block d-lg-none d-xl-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="Salesforce-home-page-navbar-menu col-2 col-sm-2 col-md-1">
+                        <input type="checkbox" id="toggle" />
+                        <label for="toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                            aria-controls="offcanvasScrolling">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                    </div>
+                    <!--salesfores side-bar-main start mobile-->
+                    <div class="offcanvas offcanvas-start slidebar" data-bs-scroll="true" data-bs-backdrop="false"
+                        tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="Salesforce-home-page-side-bar-text">
+                            <div><Button class="offcanvas-title side-bar-ul-text" onclick="display('section1')"
+                                    id="offcanvasScrollingLabel">Products</button></div>
+                            <div><Button class="offcanvas-title side-bar-ul-text" onclick="display('section2')"
+                                    id="offcanvasScrollingLabel">Industries</button></div>
+                            <div><Button class="offcanvas-title side-bar-ul-text" onclick="display('section3')"
+                                    id="offcanvasScrollingLabel">Learing</button></div>
+                            <div><Button class="offcanvas-title side-bar-ul-text" onclick="display('section4')"
+                                    id="offcanvasScrollingLabel">Support</button></div>
+                            <div><Button class="offcanvas-title side-bar-ul-text" onclick="display('section5')"
+                                    id="offcanvasScrollingLabel">Company</button></div>
+                            <div><Button class="offcanvas-title side-bar-ul-text" onclick="display('section6')"
+                                    id="offcanvasScrollingLabel">Salesforce+</button></div>
+                        </div>
+                        <hr class="Salesforce-home-page-side-bar-hr">
+                        <div class="offcanvas-body">
+                            <div><i class="fa-solid fa-user" style="color: #042b63;"></i><a href=""
+                                    class="offcanvas-title side-bar-bl-text"
+                                    id="offcanvasScrollingLabel">&nbsp;Login</a></div>
+                            <div><i class="fa-solid fa-phone" style="color: #042b63;"></i><a href=""
+                                    class="offcanvas-title side-bar-bl-text"
+                                    id="offcanvasScrollingLabel">&nbsp;Contact</a></div>
+                            <div><i class="fa-solid fa-globe" style="color: #042b63;"></i><a href=""
+                                    class="offcanvas-title side-bar-bl-text" id="offcanvasScrollingLabel">&nbsp;Change
+                                    Region</a></div>
+                            <div class="side-bar-number"><a href="#" class="side-bar-bl-text">+91 94609-94274</a></div>
+                        </div>
+                    </div>
+                    <!--salesfores side-bar-main mobile end-->
+                    <!-- Salesforce-home-page-navbar-logo mobile-->
+                    <div class="Salesforce-home-page-navbar-logo col-3 col-sm-5 col-md-6">
+                        <img src="https://a.sfdcstatic.com/shared/images/c360-nav/mobile_logo.png"
+                            class="Salesforce-home-page-navbar-logo-img" />
+
+                    </div>
+                    <!--Salesforce-home-page-navbar-search mobile logo-->
+                    <div class="Salesforce-home-page-navbar-search col-1 col-sm-1 col-md-1 ">
+                        <i class="fa-solid fa-magnifying-glass fa-lg " style="color: #042b63;"></i>
+                    </div>
+                    <!-- Salesforce-home-page-navbar-login mobile-->
+                    <div class="Salesforce-home-page-navbar-login col-2 col-sm-1 col-md-1">
+                        <i class="fa-solid fa-user fa-lg" style="color: #042b63;"></i>
+                    </div>
+                    <!--Salesforce-home-page-navbar-button-->
+                    <div class="Salesforce-home-page-navbar-button-div col-4 col-sm-3 col-md-3">
+                        <button class="Salesforce-home-page-navbar-button btn btn-success">
+                            Try for free
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--lg and xl screen nav bar-->
+        <div class="Salesforce-home-page-navbar-laptop fixed-top d-none d-sm-none s-md-none d-lg-block d-xl-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <!--Salesforce-home-page-navbar-laptop-menu-->
+                    <div class="Salesforce-home-page-navbar-laptop-menu col-lg-8 col-xl-8">
+                        <div class="container-fluid">
+                            <div class="row">
+
+
+                                <div class="Salesforce-home-page-navbar-laptop-menu-icon col-lg-1 col-xl-1">
+                                    <img src="https://c1.sfdcstatic.com/content/dam/sfdc-docs/www/logos/logo-salesforce.svg"
+                                        class="Salesforce-home-page-navbar-laptop-menu-icon-img" />
+                                </div>
+                                <div class="d-flex Salesforce-home-page-navbar-laptop-menu-icon col-lg-10 col-xl-10">
+                                    <!--product-sidebar laptop-->
+                                    <div class="laptop-menu-texr">
+                                        <button class="Salesforce-home-page-navbar-laptop-menu-text" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#Products"
+                                            aria-controls="offcanvasWithBothOptions">Products</button>
+
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                            id="Products" aria-labelledby="offcanvasWithBothOptionsLabel"
+                                            style="margin-top:80px;">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title Salesforce-home-page-navbar-laptop-menu-div"
+                                                    id="offcanvasWithBothOptionsLabel">Products</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <!--product-text 1-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder11.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Products</button>
+                                                </div>
+                                                <!--product-text 2-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/commerce-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Commerce</button>
+                                                </div>
+                                                <!--product-text 3-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder29.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Data Cloud</button>
+                                                </div>
+                                                <!--product-text 4-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder1.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Tableau</button>
+                                                </div>
+                                                <!--product-text 5-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/integration-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Mulesoft</button>
+                                                </div>
+                                                <!--product-text 6-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder12.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Artificial Intelligence</button>
+                                                </div>
+                                                <!--product-text 7-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/sales-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Sales</button>
+                                                </div>
+                                                <!--product-text 8-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/marketing-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Marketing</button>
+                                                </div>
+                                                <!--product-text 9-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder13.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Slack</button>
+                                                </div>
+                                                <!--product-text 10-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/platform-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">PLatform</button>
+                                                </div>
+                                                <!--product-text 11-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/icons/product/products-sustainability-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Net Zero</button>
+                                                </div>
+                                                <!--product-text 12-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/product-smb-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Small Business</button>
+                                                </div>
+                                                <!--product-text 13-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/grid-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Partner Apps & Experts</button>
+                                                </div>
+                                                <!--product-text 14-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/calendar-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Customer Success</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div-bg">
+                                                    <h1 class="Salesforce-home-page-navbar-laptop-menu-text-1">Explore
+                                                        Customer</h1>
+                                                    <button
+                                                        class="btn btn-primary Salesforce-home-page-navbar-laptop-menu-div-bg-btn">Seel
+                                                        all Salesforcee Products</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--siderbar 1 end-->
+
+
+                                    <!--product-sidebar 2 laptop-->
+                                    <div class="laptop-menu-texr">
+                                        <button class="Salesforce-home-page-navbar-laptop-menu-text" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#Industries"
+                                            aria-controls="offcanvasWithBothOptions">Industries</button>
+
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                            id="Industries" aria-labelledby="offcanvasWithBothOptionsLabel"
+                                            style="margin-top:80px;">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title Salesforce-home-page-navbar-laptop-menu-div"
+                                                    id="offcanvasWithBothOptionsLabel">Industries</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <!--product-text 1-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder16.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Automotive</button>
+                                                </div>
+                                                <!--product-text 2-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/events-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Communications</button>
+                                                </div>
+                                                <!--product-text 3-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/consumer-goods-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Consumer Goods</button>
+                                                </div>
+                                                <!--product-text 4-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder20.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Education</button>
+                                                </div>
+                                                <!--product-text 5-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder21.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Energy & Utilities</button>
+                                                </div>
+                                                <!--product-text 6-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/financial-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">financial Servies</button>
+                                                </div>
+                                                <!--product-text 7-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/health-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Healthcare</button>
+                                                </div>
+                                                <!--product-text 8-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/manufacturing-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">manufacturing</button>
+                                                </div>
+                                                <!--product-text 9-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder30.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Media</button>
+                                                </div>
+                                                <!--product-text 10-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder23.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Nonprofit</button>
+                                                </div>
+                                                <!--product-text 11-->
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <div class="logo-div shadow"><img
+                                                            src="https://www.salesforce.com/content/dam/web/global/svg-icons/radio-day.svg"
+                                                            class="logo-div-img" /></div>
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Retail</button>
+                                                </div>
+
+
+
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div-bg">
+                                                    <h1 class="Salesforce-home-page-navbar-laptop-menu-text-1">Explore
+                                                        Customer</h1>
+                                                    <button
+                                                        class="btn btn-primary Salesforce-home-page-navbar-laptop-menu-div-bg-btn">Seel
+                                                        all Salesforcee Products</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--siderbar Industries end-2 laptop-->
+                                    <!-- sidevar Learing -start-3 laptop-->
+                                    <div class="laptop-menu-texr">
+                                        <button class="Salesforce-home-page-navbar-laptop-menu-text" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#Learing"
+                                            aria-controls="offcanvasWithBothOptions">Learing</button>
+
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                            id="Learing" aria-labelledby="offcanvasWithBothOptionsLabel"
+                                            style="margin-top:80px;">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title Salesforce-home-page-navbar-laptop-menu-div"
+                                                    id="offcanvasWithBothOptionsLabel">Learing</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="Learing-menu-card">
+                                                    <img src="images/resources-promo-sky-desktop.webp"
+                                                        class="Learing-menu-card-img-1" />
+                                                    <img src="images/nav-trailhead-1.webp"
+                                                        class="Learing-menu-card-img-2" />
+                                                    <h1 class="Learing-menu-card-heading">Become a Trailblazer.</h1>
+                                                    <p class="Learing-menu-card-detail">Unlock free hands-on learning,
+                                                        our<br> global community, original series, and <br>support.</p>
+                                                    <button class="btn btn-primary Learing-menu-card-button">Join for
+                                                        free</button>
+                                                    <img src="images/company-promo-bottom-desktop.webp"
+                                                        class="Learing-menu-card-img-3" />
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">learning on Trallhead</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Customer</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Events & Experiences</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">By Topic </button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">By Role</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">By Content Type</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Blogs</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Success center</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-learning-laptop">
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sidevar Learing -end-3 laptop-->
+                                    <!-- sidebar  support start-4-->
+                                    <div class="laptop-menu-texr">
+                                        <button class="Salesforce-home-page-navbar-laptop-menu-text" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#Support"
+                                            aria-controls="offcanvasWithBothOptions">Support</button>
+
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                            id="Support" aria-labelledby="offcanvasWithBothOptionsLabel"
+                                            style="margin-top:80px;">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title Salesforce-home-page-navbar-laptop-menu-div"
+                                                    id="offcanvasWithBothOptionsLabel">Support</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="Learing-menu-card">
+                                                    <img src="images/support-promo-sky-desktop.webp"
+                                                        class="Learing-menu-card-img-1" />
+                                                    <h1 class="Learing-menu-card-heading">Questions? we can help.</h1>
+                                                    <p class="Learing-menu-card-detail">Find critical Answers for all
+                                                        things<br>Salesforces - search, browser <br>Documents, log cases
+                                                        and more.</p>
+                                                    <button class="btn btn-primary Learing-menu-card-button">Visit the
+                                                        Help Center</button>
+                                                    <img src="images/support-promo-bottom-desktop.webp"
+                                                        class="Learing-menu-card-img-3" />
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Help & Document</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Communities</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Servies & Plans</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Your Account</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-learning-laptop">
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sidebar  support end - 4-->
+                                    <!-- sidebar Company start- 5 -->
+                                    <div class="laptop-menu-texr">
+                                        <button class="Salesforce-home-page-navbar-laptop-menu-text" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#Company"
+                                            aria-controls="offcanvasWithBothOptions">Company</button>
+
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                            id="Company" aria-labelledby="offcanvasWithBothOptionsLabel"
+                                            style="margin-top:80px;">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title Salesforce-home-page-navbar-laptop-menu-div"
+                                                    id="offcanvasWithBothOptionsLabel">Company</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="Learing-menu-card">
+                                                    <img src="images/company-promo-sky-desktop.webp"
+                                                        class="Learing-menu-card-img-1" />
+                                                    <h1 class="Learing-menu-card-heading">Hear our story</h1>
+                                                    <p class="Learing-menu-card-detail">We believe in building
+                                                        relationships –<br> not just between companies and<br>
+                                                        customers, but among our global <br>communities.</p>
+                                                    <button class="btn btn-primary Learing-menu-card-button">Learn about
+                                                        us</button>
+                                                    <img src="images/company-promo-bottom-desktop.webp"
+                                                        class="Learing-menu-card-img-3" />
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">About Salesforce</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Our Values</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">our impact </button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">Careers</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">News</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                                                    <button class="Salesforce-home-page-navbar-laptop-menu-text-1"
+                                                        type="button">More Salesforce Brands</button>
+                                                </div>
+                                                <div class="Salesforce-home-page-learning-laptop">
+
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- side bar complany end 5 -->
+                                    <!-- side bar Salesforce+6 start-->
+                                    <div class="laptop-menu-texr">
+                                        <button class="Salesforce-home-page-navbar-laptop-menu-text" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#Salesforce"
+                                            aria-controls="offcanvasWithBothOptions">Salesforce+</button>
+
+                                        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1"
+                                            id="Salesforce" aria-labelledby="offcanvasWithBothOptionsLabel"
+                                            style="margin-top:80px;">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title Salesforce-home-page-navbar-laptop-menu-div"
+                                                    id="offcanvasWithBothOptionsLabel">Salesforce+</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <div class="Learing-menu-card">
+                                                    <img src="images/salesforce-plus-promo-sky-desktop.webp"
+                                                        class="Learing-menu-card-img-1 Salesforce-laptop-image" />
+                                                    <h1 class="Learing-menu-card-heading">Explore Salesforce+</h1>
+                                                    <p class="Learing-menu-card-detail">Get inspired with free access to
+                                                        award-<br>winning original series and live<br> experiences.</p>
+                                                    <button class="btn btn-primary Learing-menu-card-button">Visit
+                                                        Salesforce+</button>
+                                                    <img src="images/company-promo-bottom-desktop.webp"
+                                                        class="Learing-menu-card-img-3 Salesforce-laptop-image-1" />
+                                                </div>
+                                                <div class="Learing-menu-card">
+                                                    <h1 class="Learing-menu-card-heading">Explore inspiring original<br>
+                                                        series, episodes, and <br>specials.</h1>
+                                                    <p class="Learing-menu-card-detail">Get original content focused on
+                                                        you, <br>your business, and our<br> changing world.</p>
+                                                    <button class="btn btn-primary Learing-menu-card-button">Visit
+                                                        Salesforce+</button>
+                                                    <img src="images/salesforce-plus-original-content-my-list-bottom-desktop.webp"
+                                                        class="Learing-menu-card-img-3 Salesforce-laptop-image-2" />
+                                                </div>
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- side bar Salesforce+6 end-->
+
+
+                                </div>
+                                <div class="col-lg-1 col-xl-1"></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--Salesforce-home-page-navbar-laptop-right item-->
+                    <div class="Salesforce-home-page-navbar-laptop-right-item col-lg-4 col-xl-4">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="Salesforce-home-page-navbar-laptop-contact  col-xl-3 d-lg-none d-xl-block "
+                                    style="text-align:center;">
+                                    <h1 class="Salesforce-home-page-navbar-laptop-contact-text">Contact Us</h1>
+                                    <h2 class="Salesforce-home-page-navbar-laptop-contact-text-1">+91 94609-94274</h2>
+                                </div>
+                                <div class="col-lg-3 d-lg-block d-xl-none">
+
+                                </div>
+                                <div class="col-lg-2 col-xl-1" style="padding-top:19px;">
+                                    <i class="fa-solid fa-magnifying-glass" style="color:#042b63;"></i>
+                                </div>
+                                <div class="col-lg-2 col-xl-1  d-lg-none d-xl-block" style="padding-top:19px;">
+                                    <i class="fa-solid fa-globe" style="color: #042b63;"></i>
+                                </div>
+                                <div class="d-flex  col-xl-3 d-lg-none d-xl-block" style="padding-top:19px;">
+
+                                    <i class="fa-solid fa-user" style="color: #042b63;"></i><a
+                                        class="Salesforce-home-page-navbar-laptop-user-text">&nbsp;Login</a>
+                                </div>
+                                <div class="col-lg-2 d-lg-block d-xl-none" style="padding-top:19px;">
+                                    <i class="fa-solid fa-user" style="color: #042b63;"></i>
+                                </div>
+                                <div class="col-lg-5 col-xl-4">
+                                    <button class="btn btn-success Salesforce-home-page-navbar-laptop-button"
+                                        style="margin-top:3%; width:100%;">Try for free</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--product-sidebar end -laptop-->
+        </div>
+        <!--nav bar end all work -->
+        <div class="first-frame">
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="d-flex flex-column first-frame-left col-12 col-sm-12 col-md-6 col-lg-7 col-xl-6 d-flex flex-column justify-content-center">
+                        <img src="images/customer360-logo-1.png"
+                            class="first-frame-left-img" />
+                        <h1 class="first-frame-left-heading">AI + Data +CRM. It all adds up to customer magic.</h1>
+                        <p class="first-frame-left-detail">Personalise every customer interaction with Einstein GPT,
+                            Data Cloud, and Customer 360, the #1 CRM.</p>
+                        <div> <button class="first-frame-left-btn btn btn-primary">Start free trial</button>
+                            <button class="first-frame-right-btn-1 ">Watch demo</button>
+                        </div>
+                    </div>
+                    <div class="first-frame-right col-12 col-sm-12 col-md-6 col-lg-5 col-xl-6">
+                        <img class="first-frame-right-img"
+                            src="images/php-marquee-ai-data-crm-fg-in.webp" />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--second frame can do for you-->
+        <div class="second-frame">
+            <div style="padding-left:30px; padding-right:30px;">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="second-frame-heading col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                            <h1 class="second-frame-heading-text">Learn what Salesforce products can do for you.</h1>
+                        </div>
+                        <div class="second-frame-card-1 col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 shadow">
+
+                            <img src="images/pb-hp-product-smb_icon-1.webp"
+                                class="second-frame-card-1-img" />
+                            <h1 class="second-frame-card-1-heading">Small Business</h1>
+                            <p class="second-frame-card-1-detail">Sales, service, and email outreach tools in a single
+                                app.</p>
+                            <button class="second-frame-card-1-btn">Try for free</button>
+
+                        </div>
+                        <div class="second-frame-card-1 col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 shadow">
+                            <img src="images/pb-hp-product-smb_icon-2.webp"
+                                class="second-frame-card-1-img" />
+                            <h1 class="second-frame-card-1-heading">Sales Cloud </h1>
+                            <p class="second-frame-card-1-detail">Close more deals and speed up growth with the #1 CRM.
+                            </p>
+                            <button class="second-frame-card-1-btn">Watch demo</button>
+                        </div>
+                        <div class="second-frame-card-1 col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 shadow">
+                            <img src="images/pb-hp-product-smb_icon-3.webp"
+                                class="second-frame-card-1-img" />
+                            <h1 class="second-frame-card-1-heading">Service Cloud</h1>
+                            <p class="second-frame-card-1-detail">Make customers happy faster and build loyalty with
+                                Service Cloud.</p>
+                            <button class="second-frame-card-1-btn">Watch demo</button>
+                        </div>
+                        <div class="second-frame-card-1 col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 shadow">
+                            <img src="images/pb-hp-product-smb_icon-4.webp"
+                                class="second-frame-card-1-img" />
+                            <h1 class="second-frame-card-1-heading">Marketing Cloud</h1>
+                            <p class="second-frame-card-1-detail">Build customer relationships for life with data-first
+                                digital marketing.</p>
+                            <button class="second-frame-card-1-btn">Watch demo</button>
+                        </div>
+                        <div class="second-frame-bottom-btn col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                            <button class="second-frame-all-product-button">view all our products</button>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div>
+                <img class="seven-frame-bottom-image-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none"
+                    src="images/pb-hp-products-bg.webp" />
+                <img class="seven-frame-bottom-image-desktop d-none d-sm-none d-md-none d-lg-block d-xl-block"
+                    src="images/pb-hp-products-bg.webp" />
+
+            </div>
+        </div>
+        <!--data thred frame-->
+        <div class="thred-frame">
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-2 order-sm-2 order-md-1 order-lg-1 order-xl-1">
+                        <img src="images/genie-lg.jpg"
+                            class="thred-frame-img" />
+                    </div>
+                    <div
+                        class="thred-frame-text-box col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 order-1 order-sm-1 order-md-2 order-lg-2 order-xl-2 d-flex flex-column justify-content-center">
+                        <h1 class="thred-frame-heading">Turn data into real-time customer magic with Data Cloud.</h1>
+                        <p class="thred-frame-detail">Give your teams the most complete view of customer data with Data
+                            Cloud. Powerful automation, always-on intelligence, and real-time hyperscale data help teams
+                            instantly personalise every customer experience from one trusted platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--saving time-->
+        <div class="four-frame">
+            <div class="container-fluid">
+                <div class="row">
+                    <div
+                        class="thred-frame-text-box four-frame-text col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex flex-column justify-content-center">
+                        <h1 class="thred-frame-heading four-frame-text">Exceed customer expectations while saving time
+                            and money.</h1>
+                        <p class="thred-frame-detail four-frame-text">Your customers want the best experiences possible.
+                            Deliver them every time with Customer 360, our entire portfolio of products and services.
+                            With Customer 360, teams get a shared view of every customer, so everyone can work together
+                            more efficiently on your customer’s behalf. The result? Happier, more loyal customers,
+                            greater team productivity, and bigger cost savings, all of which help you reach your
+                            business goals even faster.</p>
+                    </div>
+                    <div class="four-frame-video col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  ">
+                        <iframe class="four-frame-video-play"
+                            src="https://www.youtube-nocookie.com/embed/SlhESAKF1Tk?controls=0&rel=0&showinfo=1&modestbranding=1"
+                            frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- four-frame-bottom image-->
+        <div>
+            <img src="images/product-grow-background-desktop_in.jpg"
+                class="four-frame-bg-img-desktop d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+            <img src="images/product-grow-background-mobile_in.jpg"
+                class="four-frame-bg-img-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none" />
+
+        </div>
+        <!-- five-frame - start free trial-->
+        <div class="five-frame ">
+            <div class="five-frame-card shadow-lg">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div
+                            class="five-frame-left col-12 col-sm-12 col-md-12 d-flex flex-column justify-content-center d-block d-sm-block  d-md-block d-lg-none d-xl-none">
+                            <h1 class="five-frame-heading"> Try Salesforce for free. No credit card required, no
+                                software to install.</h1>
+                            <div class="five-btn-margin"><button class="five-frame-start-btn ">Start free trial</button>
+                            </div>
+                            <div class="five-btn-margin"><button class="five-frame-see-btn ">See pricing </button></div>
+                        </div>
+
+                        <div
+                            class="five-frame-left col-lg-6 col-xl-6 d-flex flex-column justify-content-center d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                            <h1 class="five-frame-heading"> Try Salesforce for free. No credit card required, no
+                                software to install.</h1>
+                            <button class="five-frame-start-btn ">Start free trial</button>
+                            <button class="five-frame-see-btn ">See pricing </button>
+                        </div>
+
+                        <div class="five-frame-left col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <img src="images/php-free-trial-mobile-940w.webp"
+                                class="five-frame-image" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--seven-frame our customer-->
+        <div class="seven-frame">
+            <h1 class="six-frame-heading">
+                Over 150,000 companies, both big and small, are growing their business with Salesforce.
+            </h1>
+            <div style="text-align:center; padding-bottom:40px;">
+                <button class="second-frame-all-product-button">View all customer</button>
+            </div>
+            <div style="margin-left:25px">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-balaji.webp" />
+                        </div>
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-flame.webp" />
+                        </div>
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-genpact.webp" />
+                        </div>
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-godrejboyce.webp" />
+                        </div>
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-mahindra.webp" />
+                        </div>
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-pepe.webp" />
+                        </div>
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-razorpay.webp" />
+                        </div>
+                        <div
+                            class="seven-frame-card col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 shadow-lg d-flex flex-column justify-content-center">
+                            <img class="seven-frame-card-img"
+                                src="images/in-hp-min-logo-secutech.webp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="seven-frame-bottom-image-mobile d-block d-sm-block d-md-block d-lg-none d-xl-none"
+                    src="images/pb-hp-logos-bg-2.webp?resize=1024,207" />
+                <img class="seven-frame-bottom-image-desktop d-none d-sm-none d-md-none d-lg-block d-xl-block"
+                    src="images/pb-hp-logos-bg-2.webp" />
+
+            </div>
+        </div>
+        <!-- six frame we help grow your business-->
+
+        <div class="six-frame">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                        <h1 class="six-frame-heading">
+                            How can we help grow your business?
+                        </h1>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <img src="images/php-products-small-business-in.webp"
+                            class="six-frame-img ">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <img src="images/php-products-sales-in.webp"
+                            class="six-frame-img">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <img src="images/php-products-marketing.webp"
+                            class="six-frame-img">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                        <img src="images/php-products-service-in.webp"
+                            class="six-frame-img">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- eigth frame out technology-->
+        <div class="eigth-frame">
+            <h1 class="eigth-frame-heading six-frame-heading">
+                Our technology helps people create better jobs, lives, companies, and communities.
+            </h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="eigth-frame-card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"
+                        style="text-align:center;">
+                        <img class="eigth-frame-card-img"
+                            src="images/group-201168.webp" />
+                        <h1 class="eigth-frame-card-heading">Technology given for free or discounted</h1>
+                    </div>
+                    <div class="eigth-frame-card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"
+                        style="text-align:center;">
+                        <img class="eigth-frame-card-img"
+                            src="images/group-201169.webp" />
+                        <h1 class="eigth-frame-card-heading">Fortune 100 Best Companies to Work For 2023 (15 years in a
+                            row)</h1>
+                    </div>
+                    <div class="eigth-frame-card col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4"
+                        style="text-align:center;">
+                        <img class="eigth-frame-card-img"
+                            src="images/group-201170.webp" />
+                        <h1 class="eigth-frame-card-heading">Fortune World’s Most Admired Companies 2023</h1>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="images/pb-hp-products-bg-2.webp"
+                    class="seven-frame-bottom-image-desktop" />
+            </div>
+        </div>
+
+        <!--nine frame question -->
+        <div class="nine-frame">
+            <div class="nine-frame-card shadow-lg ">
+                <h1 class="nine-frame-card-heading">Questions? We’ll put you on the right path.</h1>
+                <p class="nine-frame-card-detail">
+                    Ask about Salesforce products, pricing, implementation, or anything else. Our highly trained reps
+                    are standing by, ready to help.
+                </p>
+                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                    <button class="nine-frame-card-button-1">Contact us</button>
+                    <button class="nine-frame-card-button-2">Edition & pricing</button>
+                </div>
+                <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+                    <button class="nine-frame-card-button-3">Contact us</button>
+                </div>
+                <div class="d-block d-sm-block d-md-none d-lg-none d-xl-none">
+                    <button class="nine-frame-card-button-4">Edition & pricing</button>
+                </div>
+            </div>
+        </div>
+        <!--ten frame me-->
+        <div class="ten-frame" style="text-align:center;">
+            <img src="https://www.salesforce.com/content/dam/sfdc-docs/www/logos/logo-salesforce.svg"
+                class="ten-frame-company-logo" />
+                <div class="">
+                    <a class="ten-frame-media-logo-1" href="https://www.linkedin.com/in/piyushsharmanova/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a class="ten-frame-media-logo" href="https://www.instagram.com/piyushsharma5321/"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+                    <a class="ten-frame-media-logo" href="https://twitter.com/Piyushs5321"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+                    <a class="ten-frame-media-logo" href="https://www.youtube.com/@Piyushsharma-5321/videos"><i class="fa-brands fa-square-youtube fa-2xl"></i></a>
+                </div>
+            <h1 class="ten-frame-number">Call us at +91 94609-94274</h1>
+        </div>
+
+        <!--footer-->
+        <footer class="footer-div">
+            <div class="top-nav-section-navbar-side">
+                <button class="top-nav-section-navbar-lang-div"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="globe-icon bi bi-globe2" viewBox="0 0 16 16">
+                        <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                    </svg>
+                    <select class="top-nav-section-navbar-lang justify-content-end">
+
+                        <option class="top-nav-section-navbar-lang-text" value="English">Worldwide</option>
+                        <option class="top-nav-section-navbar-lang-text" value="hindi">India (English)</option>
+                        <option class="top-nav-section-navbar-lang-text" value="talugu">日本 (日本語)</option>
+                        <option class="top-nav-section-navbar-lang-text" value="tamil">中国 (简体中文)</option>
+                        <option class="top-nav-section-navbar-lang-text" value="tamil">台灣 (繁體中文)</option>
+                        <option class="top-nav-section-navbar-lang-text" value="tamil">ประเทศไทย (ไทย)</option>
+                        <option class="top-nav-section-navbar-lang-text" value="tamil">España (Español)</option>
+                    </select>
+                </button>
+            </div>
+            <h1 class="footer-div-text">© Copyright 2023 Salesforce and Piyush, Inc. All rights reserved. Various
+                trademarks held by their respective owners.this a clone of Salesforce website.Its putpose is only for
+                Education </h1>
+            <a href="#" class="footer-div-link">Legal</a>
+            <a href="#" class="footer-div-link">Terms of Servies</a>
+            <a href="#" class="footer-div-link">Privacy</a>
+            <a href="#" class="footer-div-link">Resonsible Disclosure</a>
+            <a href="#" class="footer-div-link">trust</a>
+            <a href="#" class="footer-div-link">Contact</a>
+            <a href="#" class="footer-div-link">Cookie Preferences</a>
+            <h1 class="footer-div-text-2">Piyush Sharma</h1>
+        </footer>
+
+        <!--last div-->
+        <!--last div-->
+        <!--last div-->
+        <!--last div-->
+        <!--last div-->
+        <!--last div-->
+        <!--last div-->
+
+    </div>
+
+    <!--section-1 Products mobile section-->
+    <div id="section1">
+        <div class="all-menu-div">
+            <button type="button" class="btn btn-primary section1-btn" onclick="display('sectionone')">back</button>
+            <h5 class="Salesforce-home-page-navbar-laptop-menu-div all-menu-div-heading">Products</h5>
+
+            <!--product-text 1-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder11.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Products</button>
+            </div>
+            <!--product-text 2-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/commerce-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Commerce</button>
+            </div>
+            <!--product-text 3-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder29.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Data Cloud</button>
+            </div>
+            <!--product-text 4-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder1.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Tableau</button>
+            </div>
+            <!--product-text 5-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/integration-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Mulesoft</button>
+            </div>
+            <!--product-text 6-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder12.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Artificial
+                    Intelligence</button>
+            </div>
+            <!--product-text 7-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/sales-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Sales</button>
+            </div>
+            <!--product-text 8-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/marketing-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Marketing</button>
+            </div>
+            <!--product-text 9-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder13.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Slack</button>
+            </div>
+            <!--product-text 10-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/platform-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">PLatform</button>
+            </div>
+            <!--product-text 11-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/icons/product/products-sustainability-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Net Zero</button>
+            </div>
+            <!--product-text 12-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/product-smb-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Small Business</button>
+            </div>
+            <!--product-text 13-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/grid-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Partner Apps &
+                    Experts</button>
+            </div>
+            <!--product-text 14-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/calendar-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Customer Success</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div-bg ">
+                <h1 class="Salesforce-home-page-navbar-laptop-menu-text-1">Explore Customer</h1>
+                <button class="btn btn-primary Salesforce-home-page-navbar-laptop-menu-div-bg-btn">Seel all Salesforcee
+                    Products</button>
+            </div>
+
+        </div>
+
+    </div>
+    <!--section-2 Products mobile section-->
+    <div id="section2">
+        <div class="all-menu-div">
+            <button type="button" class="btn btn-primary section1-btn" onclick="display('sectionone')">back</button>
+            <h5 class="Salesforce-home-page-navbar-laptop-menu-div all-menu-div-heading">Industries</h5>
+
+            <!--product-text 1-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder16.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Automotive</button>
+            </div>
+            <!--product-text 2-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/events-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Communications</button>
+            </div>
+            <!--product-text 3-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/consumer-goods-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Consumer Goods</button>
+            </div>
+            <!--product-text 4-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder20.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Education</button>
+            </div>
+            <!--product-text 5-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder21.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Energy & Utilities</button>
+            </div>
+            <!--product-text 6-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/financial-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">financial Servies</button>
+            </div>
+            <!--product-text 7-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/health-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Healthcare</button>
+            </div>
+            <!--product-text 8-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/manufacturing-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">manufacturing</button>
+            </div>
+            <!--product-text 9-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder30.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Media</button>
+            </div>
+            <!--product-text 10-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder23.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Nonprofit</button>
+            </div>
+            <!--product-text 11-->
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <div class="logo-div shadow"><img
+                        src="https://www.salesforce.com/content/dam/web/global/svg-icons/radio-day.svg"
+                        class="logo-div-img" /></div>
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Retail</button>
+            </div>
+
+
+
+            <div class="Salesforce-home-page-navbar-laptop-menu-div-bg">
+                <h1 class="Salesforce-home-page-navbar-laptop-menu-text-1">Explore Customer</h1>
+                <button class="btn btn-primary Salesforce-home-page-navbar-laptop-menu-div-bg-btn">Seel all Salesforcee
+                    Products</button>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!--section-3 Learing mobile section-->
+    <div id="section3">
+        <div class="all-menu-div">
+            <button type="button" class="btn btn-primary section1-btn" onclick="display('sectionone')">back</button>
+            <h5 class="Salesforce-home-page-navbar-laptop-menu-div all-menu-div-heading">Learing</h5>
+            <div class="Learing-menu-card">
+                <img src="images/resources-promo-sky-desktop.webp"
+                    class="Learing-menu-card-img-1" />
+                <img src="images/nav-trailhead-1.webp"
+                    class="Learing-menu-card-img-2" />
+                <h1 class="Learing-menu-card-heading">Become a Trailblazer.</h1>
+                <p class="Learing-menu-card-detail">Unlock free hands-on learning, our<br> global community, original
+                    series, and <br>support.</p>
+                <button class="btn btn-primary Learing-menu-card-button">Join for free</button>
+                <img src="images/resources-promo-bottom-desktop.webp"
+                    class="Learing-menu-card-img-3" />
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">learning on
+                    Trallhead</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Customer</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Events &
+                    Experiences</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">By Topic </button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">By Role</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">By Content Type</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Blogs</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Success center</button>
+            </div>
+        </div>
+    </div>
+    <!--section-4 Support mobile section-->
+    <div id="section4">
+        <div class="all-menu-div">
+            <button type="button" class="btn btn-primary section1-btn" onclick="display('sectionone')">back</button>
+            <h5 class="Salesforce-home-page-navbar-laptop-menu-div all-menu-div-heading">Support</h5>
+
+            <div class="Learing-menu-card">
+                <img src="images/support-promo-sky-desktop.webp"
+                    class="Learing-menu-card-img-1" />
+                <h1 class="Learing-menu-card-heading">Questions? we can help.</h1>
+                <p class="Learing-menu-card-detail">Find critical Answers for all things<br>Salesforces - search,
+                    browser <br>Documents, log cases and more.</p>
+                <button class="btn btn-primary Learing-menu-card-button">Visit the Help Center</button>
+                <img src="images/support-promo-bottom-desktop.webp"
+                    class="Learing-menu-card-img-3" />
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Help & Document</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Communities</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Servies & Plans</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Your Account</button>
+            </div>
+        </div>
+    </div>
+    <!--section-5 Company mobile section-->
+    <div id="section5">
+        <div class="all-menu-div">
+            <button type="button" class="btn btn-primary section1-btn" onclick="display('sectionone')">back</button>
+            <h5 class="Salesforce-home-page-navbar-laptop-menu-div all-menu-div-heading">Company</h5>
+
+            <div class="Learing-menu-card">
+                <img src="images/company-promo-sky-desktop.webp"
+                    class="Learing-menu-card-img-1" />
+                <h1 class="Learing-menu-card-heading">Hear our story</h1>
+                <p class="Learing-menu-card-detail">We believe in building relationships –<br> not just between
+                    companies and<br> customers, but among our global <br>communities.</p>
+                <button class="btn btn-primary Learing-menu-card-button">Learn about us</button>
+                <img src="images/company-promo-bottom-desktop.webp"
+                    class="Learing-menu-card-img-3" />
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">About Salesforce</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Our Values</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">our impact </button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">Careers</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">News</button>
+            </div>
+            <div class="Salesforce-home-page-navbar-laptop-menu-div d-flex">
+                <button class="Salesforce-home-page-navbar-laptop-menu-text-1" type="button">More Salesforce
+                    Brands</button>
+            </div>
+
+        </div>
+    </div>
+    <!--section-6 Salesforce mobile section-->
+    <div id="section6">
+        <div class="all-menu-div">
+            <button type="button" class="btn btn-primary section1-btn" onclick="display('sectionone')">back</button>
+            <h5 class="Salesforce-home-page-navbar-laptop-menu-div all-menu-div-heading">Salesforce+</h5>
+
+            <div class="Learing-menu-card">
+                <img src="images/salesforce-plus-promo-sky-desktop.webp"
+                    class="Learing-menu-card-img-1 Salesforce-laptop-image" />
+                <h1 class="Learing-menu-card-heading">Explore Salesforce+</h1>
+                <p class="Learing-menu-card-detail">Get inspired with free access to award-<br>winning original series
+                    and live<br> experiences.</p>
+                <button class="btn btn-primary Learing-menu-card-button">Visit Salesforce+</button>
+                <img src="images/salesforce-plus-promo-bottom-desktop.webp"
+                    class="Learing-menu-card-img-3 Salesforce-laptop-image-1" />
+            </div>
+            <div class="Learing-menu-card">
+                <h1 class="Learing-menu-card-heading">Explore inspiring original<br> series, episodes, and <br>specials.
+                </h1>
+                <p class="Learing-menu-card-detail">Get original content focused on you, <br>your business, and our<br>
+                    changing world.</p>
+                <button class="btn btn-primary Learing-menu-card-button">Visit Salesforce+</button>
+                <img src="images/salesforce-plus-original-content-my-list-bottom-desktop.webp"
+                    class="Learing-menu-card-img-3 Salesforce-laptop-image-2" />
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript"
+        src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+
+
+
+</body>
+
+</html>
